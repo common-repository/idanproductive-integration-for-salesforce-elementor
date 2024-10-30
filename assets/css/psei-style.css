@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.psei-wrapper {
+  margin-top: 50px;
+  padding: 50px;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.psei-card-img-background {
+  background: url(../img/card_bg.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+
+.psei-spinner {
+  background: url(../img/spinner.gif) !important;
+  width: 50px !important;
+  height: 50px !important;
+  background-size: contain !important;
+}
+
+
+.psei-btn {
+  background: #2D7AFF !important;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px 8px;
+}
+
+.psei-title{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.psei-sub-title{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+    
+}
+
+.psei-widget{
+    height: 100vh;
+    width: 100%;
+}
+
+.psei-widget ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.psei-widget ul{
+    padding: 0px;
+}
+
+.psei-widget ul li:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 2px solid #fff;
+}
+
+.psei-icon-wrapper{
+    margin: 0px 10px;
+    align-items: center;
+    display: flex;
+}
+
+.psei-icon-wrapper svg{
+  height: 20px;
+}
+
+.error-message{
+    color: #d8000c;
+    background-color: rgba(255, 0, 0, 0.3);
+    border-left: 3px solid #d8000c;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px;
+ }
+
+ .hidden{
+    display: none;
+ }
+
+ .psei-order{
+    /* display: grid; */
+    grid-template-columns: auto auto auto auto;
+    overflow-x: auto;
+}
+
+.psei-order > td {
+    padding: 20px;
+}
+
+.psei-orders-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .psei-orders-table td, .psei-orders-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .psei-orders-table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .psei-orders-table tr:hover {background-color: #ddd;}
+  
+  .psei-orders-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+
+  /* <div class="psei-order-card">
+  <div class="psei-order-card-content"> */
+
+  .psei-order-card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background: #fff;
+    border-radius: 10px;
+    margin: 30px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .psei-order-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .psei-order-card-content {
+    padding: 2px 16px;
+  }
+
+
+  .psei-orders-text-wrapper {
+    float: left;
+    margin: 5px 5px;
+    width: 30%;
+  }
+
+
+  input.psei-form-control {
+    width: 100% !important;
+    /* padding: 12px 20px; */
+    /* margin: 8px 0; */
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.6em !important;
+    font-weight: 300;
+    /* color: #676767 !important; */
+    font-family: 'Poppins', sans-serif !important;
+  }
+
+  input.psei-form-control::placeholder {
+    /* width: 100% !important;
+    /* padding: 12px 20px; */
+    /* margin: 8px 0; */
+    /*display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.7em !important;
+    font-weight: 300; */
+    color: #a5a5a5 !important;
+    font-family: 'Poppins', sans-serif !important;
+  }
+
+  .psei_login_form {
+    text-align: center;
+  }
+
+
+  .psei_input {
+    padding: 10px !important;
+    border-radius: 4px !important;
+    border: 1px solid #e3e3e3 !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px;
+  }
+
+  .psei-label {
+    text-align: left;
+    display: block;
+    font-size: 14px;
+    line-height: 0.5;
+  }
+
+  .psei-form-element {
+    width: 100% !important;
+  }
+
+ .psei-toggle-password {
+  margin-left: -30px;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+ }
+
+ .psei-forgot-password-link {
+  width: 100%;
+  text-align: right;
+  font-size: 14px;
+  display: block;
+ }
+
+ .psei-text-span {
+  font-size: 14px;
+  display: block;
+ }
+
+
+ 
+ /* ========== OTP STYLE =================== */
+.digit-group input {
+  width: 50px;
+  height: 50px;
+  background-color: #F3F5FC;
+  border: none;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  color: black;
+  margin: 0 2px;
+  border-radius: 5px;
+}
+.digit-group .splitter {
+  padding: 0 5px;
+  color: white;
+  font-size: 24px;
+}
+
+.prompt {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+ /* ========== OTP STYLE =================== */
+
+ /* ========PROFILE STYLE ================== */
+ .psei-profile-input-section {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+ }
+
+ .psei-profile-input-group {
+  display: flex; 
+  flex-basis: calc(50%);  
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+ }
+
+ .psei-profile-input {
+  width: 100%;
+ }
+
+ .psei-profile-input-label {
+  text-align: left;
+  font-size: 0.7em !important;
+  font-weight: 500;
+ }
+
+ .psei-profile-name-details {
+  margin-left: 10px;
+  text-align: left !important;
+  font-size: 0.7em !important;
+ } 
+
+ .psei-profile-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 16px;
+ }
+
+ .psei-card-content {
+  padding-top: 10px;
+ }
+
+ .psei-profile-user-title {
+  color: grey;
+  font-weight: 200;
+  font-size: 0.9em;
+ }
+
+ .psei-profile-text-label {
+  color: grey;
+  font-weight: 200;
+  font-size: 0.9em;
+ }
+
+ .psei-profile-card-details {
+  color: grey;
+  font-weight: 200;
+  font-size: 0.9em;
+ }
+
+ .psei-profile-text-value {
+  font-size: 0.9em;
+  font-weight: 500;
+ }
+
+ .psei-update-profile-btn {
+  font-size: 0.6em;
+  font-weight: 500;
+ }
+
+ .psei-grey-btn {
+  background:   #bfbfbf !important
+ }
+
+ .psei-update-profile-button  {
+  font-size: 0.7em !important;
+ }
+
+ .psei-update-profile-error  {
+  background: #f57474;
+  color: white;
+  font-size: 12px;
+  border-left: 5px solid red;
+  padding: 10px;
+ }
+ /* ======== END PROFILE STYLE ================== */
+
+ /* ========DASHBOARD STYLE ================== */
+ .psei-widget-text {
+  color: black !important;
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 6px;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+
+ .psei-sidemenu-text {
+  font-size: 0.8em !important;
+  font-weight: 500;
+ }
+
+ .psei-sidemenu-current-page {
+  background-color: #EAF1FF;
+  color: #2D7AFF !important;
+ }
+
+ .psei-sidemenu-separator {
+  font-size: 0.6em;
+  font-weight: 500;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  width: 100%;
+  display: block;
+ }
+
+ 
+ /* ========END DASHBOARD STYLE ================== */
+
+
+ 
+.popover__title {
+  font-size: 24px;
+  line-height: 36px;
+  text-decoration: none;
+  color: rgb(228, 68, 68);
+  text-align: center;
+  padding: 15px 0;
+}
+
+.popover__wrapper {
+  position: relative;
+  margin-top: 1.5rem;
+  display: inline-block;
+  cursor: pointer;
+}
+.popover__content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: -50px;
+  transform: translate(0, 10px);
+  background-color: #f0f0f0;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  width: 500px;
+}
+.popover__content:before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  /* right: calc(50% - 10px); */
+  left: 50px;
+  top: -8px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #f0f0f0 transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.popover__wrapper:hover .popover__content {
+/* .popover__wrapper .popover__content { */
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -20px);
+  transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+.popover__message {
+  text-align: center;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.grid-item {
+  width: calc(33.33% - 10px);
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.popover-link {
+  color: #0073aa;
+}
+
+/* ======= Report Styles ===== */
+.psei-flex {
+  display: flex;
+}
+
+.psei-sidebar{
+  background-color: #D9D9D9;
+  color: #000;
+  padding: 30px;
+}
+
+.psei-sidebar ul{
+  list-style: none;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.psei-sidebar ul li{
+  color: #000;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 160% */
+  letter-spacing: -0.225px;
+  padding: 10px 0;
+}
+
+.psei-sidebar h1{
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: -0.3px;
+  margin-top: 0px;
+  margin-left: 15px;
+}
+
+.psei-dashboard{
+  padding: 30px 50px;
+}
+
+.psei-dashboard h1{
+  color: #000;
+  font-family: Montserrat;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 72px; /* 144% */
+  letter-spacing: -0.75px;
+}
+
+.psei-dashboard h2{
+  color: rgba(0, 0, 0, 0.80);
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 138.889% */
+  letter-spacing: -0.54px;
+  margin: 50px 0;
+}
+
+table{
+  width: 100%;
+}
+
+.psei-report-table-row th{
+  text-align: left;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+}
+
+.psei-report-table-body-row td{
+  padding: 20px 0;
+}
+
+.psei-report-sidebar-fetch-data,
+.psei-go-to-next-object{
+  cursor: pointer;
+}
+
+.psei-error-warning{
+  color: #d8d100;
+  background-color: rgba(255, 234, 0, 0.3);
+  border-left: 3px solid #d8d100;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.psei-report-sidebar-item.active a {
+  font-weight: bold;
+}
+
+/* ===== Sidebar style ==== */
+
+.psei-sidebar-list{
+  list-style: none;
+  padding: 0px;
+}
+
+.sfad-profile-name-details{
+  margin-left: 5px;
+}
+
+.sfad-sidemenu-current-page{
+  font-weight: bold;
+}
+
+.psei-sidebar-wrapper{
+  height: 100vh;
+}
+
+.psei-sidebar-item-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.psei-sidebar-item-name{
+  display: flex;
+  align-items: center;
+}
+
+.sfad-sidemenu-text{
+  margin-left: 10px;
+}
+
+/* ===addon style ===== */
+
+.psei-go-to-next-object-page{
+  cursor: pointer;
+}
+
+.psei-go-to-next-object-page:hover{
+  background: rgba(70, 124, 242, 0.2);
+}
